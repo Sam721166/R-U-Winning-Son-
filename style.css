@@ -116,6 +116,13 @@ body{
     border:2px solid black;
 }
 
+
+
+
+
+
+
+/* Responsive Design */
 @media (max-width: 1200px) {
   .box {
     width: 100%;
@@ -124,7 +131,7 @@ body{
   }
 
   #p1-1 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     text-align: center;
   }
 
@@ -161,61 +168,90 @@ body{
 
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
 
   }
-
- 
-  .box, .box2 {
-    width: 100%;
-    height: auto;
-    padding: 15px;
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    width: 80vw;
+    max-width: 100vw;
+    min-width: 0;
+    height: 40vh;
+    padding: 10vw 3vw;
     border: 3px solid black;
-    box-shadow: none;
+    box-shadow: 5px 5px 0px black;
+    padding-top: 0;
+    /* padding-bottom: 0; */
+    
   }
-
-  #p1-1 {
+.box2 {
+    width: 80vw;
+    max-width: 100vw;
+    min-width: 0;
+    height: 43vh;
+    padding: 3vw 5vw;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #p1-1, #js-p1 {
+    /* margin-top:50px; */
     font-size: 1.8rem;
+    word-break: break-word;
   }
-
   #p1-2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 30px;
+    word-break: break-word;
   }
-
+  #js-p2 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    min-height: 110px;
+    word-break: break-word;
+  }
   #input1 {
-    width: 80%;
-    font-size: 1.1rem;
-  }
-
-  #btn {
-    padding: 10px 20px;
+    width: 60vw;
     font-size: 1rem;
   }
 
-  #js-p1 {
-    font-size: 1.8rem;
+  #goback {
+    width: 32vw;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 10px auto;
+    display: block;
   }
-
-  #js-p2 {
-    font-size: 1.1rem;
+   #another{
+    width: 32vw;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 9px;
+    margin: 10px auto;
+    display: block;
   }
-
- #goback {
-    width: 110px;
-    margin: 10px 0;
+ #btn {
+    width: 42vw;
+    max-width: 300px;
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 9px;
+    margin: 10px auto;
+    display: block;
   }
- #another{
-    width: 110px;
-    margin: 10px 0;
-    font-size: 0.9rem;
-    padding: 11px;
- }
   #js-div {
     flex-direction: row;
+    width: 100%;
     align-items: center;
-    gap: 15px;
   }
 }
